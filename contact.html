@@ -2,41 +2,83 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Holly Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        
-    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-container {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        .contact-item {
+            text-decoration: none;
+            color: var(--violet-fonce);
+            transition: transform 0.3s;
+        }
+        .contact-item i {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-item:hover {
+            transform: scale(1.1);
+            color: var(--orange-vif);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div>
-            <h3><a href="#">Mon portfolio</a></h3>
-        </div>
+        <div><h3><a href="index.html">Mon portfolio</a></h3></div>
         <nav>
             <ul>
-                
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">projets</a></li>
-                <li><a href="divertissements.html">divertissement</a></li>
-                 <li><a href="passions.html">passions</a></li>
-                <li><a href="contact.html"class="active">Contact</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="divertissements.html">Divertissement</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-       <h1>Contacter nous</h1>
+        <section class="contact-container">
+            <h2>Me Contacter</h2>
+            <p>Un projet en tête ou simplement envie de discuter ? Retrouvez-moi sur mes réseaux :</p>
+            
+            <div class="contact-links">
+                <a href="https://wa.me/ton-numero" class="contact-item" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a href="https://instagram.com/ton-profil" class="contact-item" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://linkedin.com/in/ton-nom" class="contact-item" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
     </main>
+
     <footer>
-         <p>© 2026 Holly. Tous droits réservés.</p>
+        <p>© 2026 Holly. Tous droits réservés.</p>
         <div class="socials">
             <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>   
+        </div>
     </footer>
 </body>
 </html>
